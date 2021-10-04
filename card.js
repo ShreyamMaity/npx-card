@@ -57,7 +57,7 @@ const questions = [
 ];
 
 const data = {
-    name: chalk.bold.green("             Shreyam Maity"),
+    name: chalk.bold.green("                            Shreyam Maity"),
     handle: chalk.white("@ShreyamMaity"),
     work: `${chalk.white("Computer Science & Engineering Student at")} ${chalk
         .hex("#2b82b2")
