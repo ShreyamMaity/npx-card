@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const config = require('./config');
 
 'use strict'
 
@@ -40,16 +41,16 @@ const questions = [
 ];
 
 const data = {
-    name: chalk.bold.green("                        Shreyam Maity"),
-    handle: chalk.white("@ShreyamMaity"),
-    work: `${chalk.white("Computer Science & Engineering Student at")} ${chalk
+    name: chalk.bold.green(config.yourName),
+    handle: chalk.white(config.twitterHandle),
+    work: `${chalk.white(config.workat)} ${chalk
         .hex("#2b82b2")
-        .bold("NSEC")}`,
-    twitter: chalk.gray("https://twitter.com/") + chalk.cyan("ShreyamMaity"),
-    github: chalk.gray("https://github.com/") + chalk.green("ShreyamMaity"),
-    linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("shreyammaity"),
-    web: chalk.cyan("https://shreyam.in"),
-    npx: chalk.red("npx") + " " + chalk.white("shreyam"),
+        .bold(config.workPlace)}`,
+    twitter: chalk.gray("https://twitter.com/") + chalk.cyan(config.twitterUsername),
+    github: chalk.gray("https://github.com/") + chalk.green(config.githubUsername),
+    linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue(config.linkedinUsername),
+    web: chalk.cyan(config.websiteUrl),
+    npx: chalk.red("npx") + " " + chalk.white(config.npxName),
 
     labelWork: chalk.white.bold("       Work:"),
     labelTwitter: chalk.white.bold("    Twitter:"),
