@@ -7,6 +7,6 @@ module.exports = {
     twitterUsername: "ShreyamMaity",
     githubUsername: "ShreyamMaity",
     linkedinUsername: "shreyammaity",
-    websiteUrl: "https://shreyam.in",
+    websiteUrl: "https://shreyam.ml",
     npxName: "shreyam",
 };
