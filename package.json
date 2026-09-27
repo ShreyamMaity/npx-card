@@ -1,33 +1,37 @@
 {
   "name": "shreyam",
-  "version": "1.0.7",
-  "description": "A personal card for Shreyam Maity",
+  "version": "2.0.0",
+  "description": "Shreyam Maity's animated terminal business card. Run `npx shreyam`.",
   "main": "card.js",
   "bin": {
-    "shreyam": "./card.js"
+    "shreyam": "card.js"
   },
+  "files": [
+    "card.js"
+  ],
   "scripts": {
-    "test": "node card.js",
-    "pub": "npm version major & npm publish"
+    "start": "node card.js",
+    "static": "node card.js --static"
   },
-  "dependencies": {
-    "boxen": "^4.2.0",
-    "chalk": "^4.1.0",
-    "clear": "^0.1.0",
-    "cli-spinners": "^2.5.0",
-    "inquirer": "^7.3.2",
-    "open": "^7.0.4",
-    "ora": "^5.1.0",
-    "request": "^2.88.2"
+  "engines": {
+    "node": ">=14"
   },
   "keywords": [
     "card",
-    "npm",
-    "npm card",
     "npx",
     "npx card",
-    "business card"
+    "business card",
+    "cli",
+    "terminal"
   ],
-  "author": "Shreyam Maity <sm8967724231@gmail.com> (https://shreyam.in/)",
-  "license": "ISC"
+  "author": "Shreyam Maity (https://shreyam.dev)",
+  "homepage": "https://github.com/ShreyamMaity/npx-card#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShreyamMaity/npx-card.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShreyamMaity/npx-card/issues"
+  },
+  "license": "MIT"
 }
